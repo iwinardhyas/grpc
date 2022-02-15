@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message Message {
+    string body = 1;
+}
+
+service Chatservice {
+    rpc SayHello(Message) returns (Message) {}
+}
